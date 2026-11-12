@@ -32,7 +32,6 @@ La selección y el alcance están sujetos a confirmación de compatibilidad y de
 ```powershell
 git clone https://github.com/3UR12/uip-network-config-compiler-2026.git
 cd uip-network-config-compiler-2026
-git switch chore/estructura-inicial-windows11
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\bootstrap-windows11.ps1
 ```
 
