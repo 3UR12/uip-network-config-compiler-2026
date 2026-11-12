@@ -21,12 +21,11 @@ La salida de SDK debe incluir un `10.0.xxx`. El archivo `global.json` admite ver
 
 ## Estructura de proyectos .NET
 
-Clonar el repositorio y usar la rama de preparación o `main` cuando se haya integrado:
+Clonar el repositorio desde la rama principal una vez integrado el PR:
 
 ```powershell
 git clone https://github.com/3UR12/uip-network-config-compiler-2026.git
 cd uip-network-config-compiler-2026
-git switch chore/estructura-inicial-windows11
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\bootstrap-windows11.ps1
 ```
 
