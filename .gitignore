@@ -1,0 +1,41 @@
+# .NET / Visual Studio
+**/bin/
+**/obj/
+.vs/
+.vscode/*.log
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+*.trx
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+**/appsettings.Development.json
+**/appsettings.*.local.json
+**/secrets.json
+*.pfx
+*.snk
+
+# Local databases / generated artifacts
+*.mdf
+*.ldf
+*.bak
+*.db
+*.sqlite
+generated/
+artifacts/
+*.tmp
+
+# OS and IDE
+.DS_Store
+Thumbs.db
+.idea/
+_ReSharper*/
+*.DotSettings.user
