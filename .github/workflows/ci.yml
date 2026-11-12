@@ -1,0 +1,23 @@
+name: Validar bootstrap .NET (Windows)
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  bootstrap:
+    runs-on: windows-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v4
+      - name: Instalar SDK .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Generar y probar estructura base
+        shell: pwsh
+        run: ./scripts/bootstrap-windows11.ps1
